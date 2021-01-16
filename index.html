@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-grading </title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <div id="result"></div>
+
+
+    <script>
+        var result = 69;
+
+        if (result <= 39) {
+            document.getElementById('result').innerHTML = "Fail";
+            console.log('Fail');
+
+        }
+        else if (result >= 40 && result <= 49) {
+            document.getElementById('result').innerHTML = "C";
+            console.log('C');
+
+        }
+        else if (result >= 50 && result <= 59) {
+            document.getElementById('result').innerHTML = "B";
+            console.log('B');
+        }
+        else if (result >= 60 && result <= 69) {
+            document.getElementById('result').innerHTML = "A-";
+            console.log('A-');
+        }
+        else if (result >= 70 && result <= 79) {
+            document.getElementById('result').innerHTML = "A";
+            console.log('A');
+        }
+        else if (result >= 80 && result <= 100) {
+            document.getElementById('result').innerHTML = "A+";
+            console.log('A+');
+        }
+        else {
+            document.getElementById('result').innerHTML = "enter a number between 1 to 100";
+            console.log('enter a number between 1 to 100');
+        }
+
+    </script>
+
+
+
+
+
+    <script src="js/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
